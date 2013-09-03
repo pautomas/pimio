@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Pimiö - Easy photo effects for your site</title>
+    <link href="/static/favicon.png" rel="shortcut icon" type="image/png"/>
+
+	<link href="css/reset.css" media="screen" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+
+
+    <script type="text/javascript" src="pimio.js"></script>
+
+    </head>
+
+    <body>
+		<div id="content">
+			<div id="intro">
+        		<img src="img/pic.jpg" class="pimio-img intro" id="pic0"/>
+    	   		<div>
+        	   		<h1>Pimiö</h1>
+        	   		<p>
+                        <em>[pimiø]</em> (Darkroom in Finnish) is a Javascript library to apply photo effects to the images on a website. It's currently under development but you can look at the source code of this page if you're interested.
+        	   		</p><p>
+        	   		  Since it uses the canvas HTML element it only works on Firefox, Chrome, Safari and Opera. IE support should be possible by using FlashCanvas but it hasn't been tested (yet).
+        	   		  </p><p>
+        	   		  Below you can see some samples of the effects available in the current version of Pimiö.
+        	   		  </p>
+		   	    </div>
+		   	</div>
+            <div id="samples">
+                <ul id="items">
+                    <li>
+        		    	<div class="option">
+        		    		<img src="img/pic.jpg" class="pimio-img left" id="pic-70s"/>
+        			   		<h3>70s</h3>
+        			   	</div>
+    			   	</li>
+    			   	<li>
+        		    	<div class="option">
+         				   <img src="img/pic.jpg" class="pimio-img left" id="pic-lomo"/>
+        			       <h3>Lomo</h3>
+        			   	</div>
+    			   	</li>
+                    <li>
+        		    	<div class="option">
+        		    		<img src="img/pic.jpg" class="pimio-img left" id="pic-crossprocess"/>
+        			   		<h3>Cross Process</h3>
+        			   	</div>
+    			   	</li>
+                    <li>
+        		    	<div class="option">
+        		    		<img src="img/pic.jpg" class="pimio-img left" id="pic-emo"/>
+        			   		<h3>Emo</h3>
+        			   	</div>
+    			   	</li>
+    			   	<li>
+        		    	<div class="option">
+        				   <img src="img/pic.jpg" class="pimio-img left" id="pic-antique"/>
+        			   	   <h3>Antique</h3>
+        			   	</div>
+    			   	</li>
+    			   	<li>
+        		    	<div class="option">
+        				   <img src="img/pic.jpg" class="pimio-img left" id="pic-sunburn"/>
+        			   	   <h3>Sunburn</h3>
+        			   	</div>
+    			   	</li>
+    			   	<li>
+        		    	<div class="option">
+        				   <img src="img/pic.jpg" class="pimio-img left" id="pic-nightvision"/>
+        			   	   <h3>Nightvision</h3>
+        			   	</div>
+    			   	</li>
+    			   	<li>
+        		    	<div class="option">
+        				   <img src="img/pic.jpg" class="pimio-img left" id="pic-underwater"/>
+        			   		<h3>Underwater</h3>
+        			   	</div>
+    			   	</li>
+    			   	<li>
+        		    	<div class="option">
+        				   <img src="img/pic.jpg" class="pimio-img left" id="pic-sepia"/>
+        			   		<h3>Sepia</h3>
+        			   	</div>
+    			   	</li>
+    			   	<li>
+        		    	<div class="option">
+        				   <img src="img/pic.jpg" class="pimio-img left" id="pic-greyscale"/>
+        			   		<h3>Greyscale</h3>
+        			   	</div>
+    			   	</li>
+                </ul>
+                <div id="footer">
+                    <small>by <a href="http://www.manekinekoninja.com/" target="_blank">Pau Tom&agrave;s</a></small>
+                </div>
+		    </div>
+        </div>
+
+		<script>
+
+			initPimio = function() {
+		        Pimio("pic-70s", { effect : "70s", rotate : 2, scale: 1});
+		        Pimio("pic-crossprocess", { effect : "crossprocess", rotate : -2, scale: 1});
+				Pimio("pic-lomo", { effect : "lomo", rotate : 2, scale: 1});
+				Pimio("pic-emo", { effect : "emo", rotate : -2, scale: 1});
+		        Pimio("pic-sepia", { effect : "sepia", rotate : 2, scale: 1});
+		        Pimio("pic-sunburn", { effect : "sunburn", rotate : -2, scale: 1});
+		        Pimio("pic-nightvision", { effect : "nightvision", rotate : 2, scale: 1});
+		        Pimio("pic-underwater", { effect : "underwater", rotate : -2, scale: 1});
+		        Pimio("pic-greyscale", { effect : "greyscale", rotate : 2, scale: 1});
+		        Pimio("pic-antique", { effect : "antique", rotate : -2, scale: 1});
+			}
+
+            if (window.addEventListener)
+                window.addEventListener("load", initPimio, false);
+            else if (window.attachEvent)
+                window.attachEvent("onload", initPimio);
+            else window.onload = initPimio;
+
+		</script>
+
+	<script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18759842-1']);
+      _gaq.push(['_setDomainName', '.nekojs.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+	</body>
+</html>

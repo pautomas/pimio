@@ -1,0 +1,107 @@
+body {
+    font-family: Arial;
+    font-size: 0.7em;
+    background-color: black;
+    color: grey;
+    margin: 0;
+}
+h1 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding-bottom: 10px;
+}
+ul {
+    margin: 0;
+}
+div#content {
+    width: 750px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+div#intro {
+    position: relative;
+    padding: 70px 20px 0 20px;
+    margin-bottom: 40px;
+    min-height: 180px;
+    z-index: 10000;
+}
+div#footer {
+    padding-top: 20px;
+    text-align: center;
+}
+#intro div {
+    width: 470px;
+}
+#samples {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    box-shadow:  1px 1px 10px #000;
+    -webkit-box-shadow:  1px 1px 10px #000;
+       -moz-box-shadow:  1px 1px 10px #000;
+        -o-box-shadow:  1px 1px 10px #000;
+}
+#items li {
+    margin: 0 0;
+    height: 320px;
+}
+div.option {
+    position: relative;
+    border: 1px solid grey;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 50px;
+    background-color: white;
+    padding: 5px 20px;
+    height: 30px;
+}
+div.download-box {
+    font-size: 20px;
+}
+img.pimio-img {
+    background: white;
+    border: 10px solid white;
+    box-shadow: 1px 1px 5px #888;
+    -webkit-box-shadow: 1px 1px 5px #888;
+       -moz-box-shadow: 1px 1px 5px #888;
+         -o-box-shadow: 1px 1px 5px #888;
+    margin: 10px;
+}
+.option img.pimio-img {
+    position: relative;
+    top: -50px;
+}
+img.intro {
+    position: absolute;
+    bottom: -50px;
+    right: -150px;
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+       -moz-transform: rotate(5deg);
+         -o-transform: rotate(5deg);
+}
+img.right {
+    float: right;
+}
+img.left {
+    float: left;
+}
+code {
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 10px;
+}
